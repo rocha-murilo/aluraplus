@@ -1,0 +1,167 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --azul-botao: #167BF7;
+    --cor-de-fundo: #040814;
+    --fonte-familia: 'Inter', sans-serif;
+    --azul-botao-efeito: #52aef5;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-familia);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    /* "grid" para separar os elementos todos */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--azul-botao);
+    border-radius: 5px;
+    /* medida "em" relativa ao tamanho da fonte size */
+    padding: 1em;
+    color: var(--branco-principal);
+    /* botao ocupando o espaço de um bloco inteiro somente para ele */
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao-sem-fundo {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+    border-radius: 5px;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 0 0 6em;
+}
+
+.sencudario__imagem {
+    width: 85%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 9em;
+}
+
+.descricao__titulo {
+    font-family: var(--fonte-familia);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.125em;
+}
+
+.descricao__texto {
+    font-family: var(--fonte-familia);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    font-family: var(--fonte-familia);
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    /* margin, como abaixo, para cima (top) e baixo (bottom) */
+    margin: 5em 0;
+}
+
+.dispositivos {
+    /* para centralizar todos os itens "chamados" */
+    text-align: center;
+}
+
+.dispositivos__subtitulo {
+    font-size: 32px;
+    font-family: var(--fonte-familia);
+    color: var(--branco-principal);
+    margin-top: 0.2em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 2em 0;
+    gap: 16px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    margin: 3em 0;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    margin: 1em;
+    color: var(--cinza-secundario);
+}
+
+.rodape__link__links {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.rodape__link__links:hover {
+    color: var(--azul-botao);
+}
+
+.container__botao:hover {
+    color: var(--cor-de-fundo);
+    background-color: var(--azul-botao-efeito);
+}
+
